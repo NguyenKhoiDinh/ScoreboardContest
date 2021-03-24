@@ -248,7 +248,7 @@ class App extends Component {
         });
       });
       return (
-        <tr style={{height: "12px"}} key={element.name}>
+        <tr style={{position: 'relative', height: "12px"}} key={element.name}>
           {name}
           {trophyy}
           {rank}

@@ -188,12 +188,13 @@ class App extends Component {
     }
     newdata[poss] = temp;
     newmark[pos] = 0;
-    for (let i = 0; i < newdata.length; i++) {
-      var e = document.getElementById(newdata[i].name);
-      if (e) {
-        e.style.zIndex = 1000 - i;
-      }
-    }
+    // @hungphongbk wtf are u doing, why interact with pure DOM like this in ReactJS?
+    // for (let i = 0; i < newdata.length; i++) {
+    //   var e = document.getElementById(newdata[i].name);
+    //   if (e) {
+    //     e.style.zIndex = 1000 - i;
+    //   }
+    // }
     status = true;
     this.setState({
       result: newdata,
@@ -248,7 +249,7 @@ class App extends Component {
         });
       });
       return (
-        <tr style={{height: "12px"}} key={element.name}>
+        <tr style={{height: "12px", position:"relative", zIndex: 1000 - id}} key={element.name}>
           {name}
           {trophyy}
           {rank}

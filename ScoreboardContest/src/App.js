@@ -10,30 +10,176 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      result: [{"name": "Dinh.Thi.Nguyet.Thanh", "status": ["-1", "1.00", "-1", "-1", "-1", "-1"], "totalScore": 0, "grade": 11, "score": [[-1, -1], [1], [-1, -1], [-1], [-1, -1], [-1, -1]]}, 
-      {"name": "Mai.Anh.Quan", "status": ["-1", "0.00", "-1", "-1", "-1", "-1"], "totalScore": 0, "grade": 11, "score": [[-1, -1], [0], [-1, -1], [-1], [-1, -1], [-1, -1]]}, 
-      {"name": "Nguyen.Ha.Vy", "status": ["-1", "1.00", "-1", "-1", "-1", "-1"], "totalScore": 0, "grade": 11, "score": [[-1, -1], [1], [-1, -1], [-1], [-1, -1], [-1, -1]]}, 
-      {"name": "Nguyen.Quoc.Huy", "status": ["-1", "0.00", "-1", "-1", "-1", "-1"], "totalScore": 0, "grade": 11, "score": [[-1, -1], [0], [-1, -1], [-1], [-1, -1], [-1, -1]]}, 
-      {"name": "Vo.Thanh.Nguyen", "status": ["-1", "0.00", "-1", "-1", "-1", "-1"], "totalScore": 0, "grade": 12, "score": [[-1, -1], [0], [-1, -1], [-1], [-1, -1], [-1, -1]]}, 
-      {"name": "Cao.Huu.Khuong.Duy", "status": ["2.00", "1.00", "-1", "1.00", "2.00", "-1"], "totalScore": 0, "grade": 12, "score": [[1, 1], [1], [-1, -1], [1], [1, 1], [-1, -1]]}, 
-      {"name": "Dang.Duy.Lan", "status": ["-1", "1.00", "-1", "1.00", "0.00", "-1"], "totalScore": 0, "grade": 12, "score": [[-1, -1], [1], [-1, -1], [1], [0, 0], [-1, -1]]}, 
-      {"name": "Doan.Anh.Quan", "status": ["-1", "1.00", "-1", "0.00", "0.00", "-1"], "totalScore": 0, "grade": 11, "score": [[-1, -1], [1], [-1, -1], [0], [0, 0], [-1, -1]]}, 
-      {"name": "Hoang.Duc.Dung", "status": ["-1", "0.00", "0.00", "1.00", "-1", "-1"], "totalScore": 0, "grade": 11, "score": [[-1, -1], [0], [0, 0], [1], [-1, -1], [-1, -1]]}, 
-      {"name": "Hoang.Ngoc.Dung", "status": ["-1", "1.00", "1.00", "0.00", "1.00", "-1"], "totalScore": 0, "grade": 11, "score": [[-1, -1], [1], [1, 0], [0], [1, 0], [-1, -1]]}, 
-      {"name": "Huynh.Minh.Trung", "status": ["0.00", "1.00", "1.00", "1.00", "2.00", "-1"], "totalScore": 0, "grade": 11, "score": [[0, 0], [1], [1, 0], [1], [1, 1], [-1, -1]]},  
-      {"name": "Le.Minh.Hung", "status": ["-1", "0.00", "-1", "1.00", "2.00", "-1"], "totalScore": 0, "grade": 12, "score": [[-1, -1], [0], [-1, -1], [1], [1, 1], [-1, -1]]}, 
-      {"name": "Nguyen.Gia.Bao", "status": ["-1", "1.00", "-1", "0.00", "-1", "-1"], "totalScore": 0, "grade": 11, "score": [[-1, -1], [1], [-1, -1], [0], [-1, -1], [-1, -1]]}, 
-      {"name": "Nguyen.Huy.Phuoc", "status": ["-1", "1.00", "-1", "0.00", "0.00", "-1"], "totalScore": 0, "grade": 11, "score": [[-1, -1], [1], [-1, -1], [0], [0, 0], [-1, -1]]}, 
-      {"name": "Nguyen.Le.Duy.Thinh", "status": ["-1", "1.00", "2.00", "0.00", "1.00", "-1"], "totalScore": 0, "grade": 12, "score": [[-1, -1], [1], [1, 1], [0], [1, 0], [-1, -1]]}, 
-      {"name": "Nguyen.Minh.Hieu", "status": ["-1", "1.00", "1.00", "1.00", "-1", "-1"], "totalScore": 0, "grade": 12, "score": [[-1, -1], [1], [1, 0], [1], [-1, -1], [-1, -1]]}, 
-      {"name": "Nguyen.Ngoc.Tu", "status": ["0.00", "1.00", "-1", "1.00", "1.00", "-1"], "totalScore": 0, "grade": 11, "score": [[0, 0], [1], [-1, -1], [1], [1, 0], [-1, -1]]}, 
-      {"name": "Nguyen.Quoc.An", "status": ["0.00", "1.00", "-1", "0.00", "1.00", "-1"], "totalScore": 0, "grade": 11, "score": [[0, 0], [1], [-1, -1], [0], [1, 0], [-1, -1]]}, 
-      {"name": "Nguyen.Tai.Phu", "status": ["-1", "1.00", "-1", "0.00", "-1", "-1"], "totalScore": 0, "grade": 11, "score": [[-1, -1], [1], [-1, -1], [0], [-1, -1], [-1, -1]]}, 
-      {"name": "Nguyen.Thanh.Phat", "status": ["-1", "1.00", "1.00", "1.00", "1.00", "-1"], "totalScore": 0, "grade": 12, "score": [[-1, -1], [1], [1, 0], [1], [1, 0], [-1, -1]]}, 
-      {"name": "Phan.Ba.Duc", "status": ["0.00", "1.00", "-1", "0.00", "1.00", "-1"], "totalScore": 0, "grade": 12, "score": [[0, 0], [1], [-1, -1], [0], [1, 0], [-1, -1]]}, 
-      {"name": "Phan.Minh.Quang", "status": ["1.00", "1.00", "2.00", "1.00", "2.00", "-1"], "totalScore": 0, "grade": 12, "score": [[1, 0], [1], [1, 1], [1], [1, 1], [-1, -1]]}, 
-      {"name": "Phan.Nam.Thanh", "status": ["0.00", "1.00", "-1", "1.00", "-1", "-1"], "totalScore": 0, "grade": 11, "score": [[0, 0], [1], [-1, -1], [1], [-1, -1], [-1, -1]]}, 
-      {"name": "Tran.Dang.Minh.Quan", "status": ["-1", "0.00", "-1", "-1", "1.00", "-1"], "totalScore": 0, "grade": 11, "score": [[-1, -1], [0], [-1, -1], [-1], [1, 0], [-1, -1]]}],
+      result: [
+        {
+          name: "Dinh.Thi.Nguyet.Thanh",
+          status: ["-1", "1.00", "-1", "-1", "-1", "-1"],
+          totalScore: 0,
+          grade: 11,
+          score: [[-1, -1], [1], [-1, -1], [-1], [-1, -1], [-1, -1]],
+        },
+        {
+          name: "Mai.Anh.Quan",
+          status: ["-1", "0.00", "-1", "-1", "-1", "-1"],
+          totalScore: 0,
+          grade: 11,
+          score: [[-1, -1], [0], [-1, -1], [-1], [-1, -1], [-1, -1]],
+        },
+        {
+          name: "Nguyen.Ha.Vy",
+          status: ["-1", "1.00", "-1", "-1", "-1", "-1"],
+          totalScore: 0,
+          grade: 11,
+          score: [[-1, -1], [1], [-1, -1], [-1], [-1, -1], [-1, -1]],
+        },
+        {
+          name: "Nguyen.Quoc.Huy",
+          status: ["-1", "0.00", "-1", "-1", "-1", "-1"],
+          totalScore: 0,
+          grade: 11,
+          score: [[-1, -1], [0], [-1, -1], [-1], [-1, -1], [-1, -1]],
+        },
+        {
+          name: "Vo.Thanh.Nguyen",
+          status: ["-1", "0.00", "-1", "-1", "-1", "-1"],
+          totalScore: 0,
+          grade: 12,
+          score: [[-1, -1], [0], [-1, -1], [-1], [-1, -1], [-1, -1]],
+        },
+        {
+          name: "Cao.Huu.Khuong.Duy",
+          status: ["2.00", "1.00", "-1", "1.00", "2.00", "-1"],
+          totalScore: 0,
+          grade: 12,
+          score: [[1, 1], [1], [-1, -1], [1], [1, 1], [-1, -1]],
+        },
+        {
+          name: "Dang.Duy.Lan",
+          status: ["-1", "1.00", "-1", "1.00", "0.00", "-1"],
+          totalScore: 0,
+          grade: 12,
+          score: [[-1, -1], [1], [-1, -1], [1], [0, 0], [-1, -1]],
+        },
+        {
+          name: "Doan.Anh.Quan",
+          status: ["-1", "1.00", "-1", "0.00", "0.00", "-1"],
+          totalScore: 0,
+          grade: 11,
+          score: [[-1, -1], [1], [-1, -1], [0], [0, 0], [-1, -1]],
+        },
+        {
+          name: "Hoang.Duc.Dung",
+          status: ["-1", "0.00", "0.00", "1.00", "-1", "-1"],
+          totalScore: 0,
+          grade: 11,
+          score: [[-1, -1], [0], [0, 0], [1], [-1, -1], [-1, -1]],
+        },
+        {
+          name: "Hoang.Ngoc.Dung",
+          status: ["-1", "1.00", "1.00", "0.00", "1.00", "-1"],
+          totalScore: 0,
+          grade: 11,
+          score: [[-1, -1], [1], [1, 0], [0], [1, 0], [-1, -1]],
+        },
+        {
+          name: "Huynh.Minh.Trung",
+          status: ["0.00", "1.00", "1.00", "1.00", "2.00", "-1"],
+          totalScore: 0,
+          grade: 11,
+          score: [[0, 0], [1], [1, 0], [1], [1, 1], [-1, -1]],
+        },
+        {
+          name: "Le.Minh.Hung",
+          status: ["-1", "0.00", "-1", "1.00", "2.00", "-1"],
+          totalScore: 0,
+          grade: 12,
+          score: [[-1, -1], [0], [-1, -1], [1], [1, 1], [-1, -1]],
+        },
+        {
+          name: "Nguyen.Gia.Bao",
+          status: ["-1", "1.00", "-1", "0.00", "-1", "-1"],
+          totalScore: 0,
+          grade: 11,
+          score: [[-1, -1], [1], [-1, -1], [0], [-1, -1], [-1, -1]],
+        },
+        {
+          name: "Nguyen.Huy.Phuoc",
+          status: ["-1", "1.00", "-1", "0.00", "0.00", "-1"],
+          totalScore: 0,
+          grade: 11,
+          score: [[-1, -1], [1], [-1, -1], [0], [0, 0], [-1, -1]],
+        },
+        {
+          name: "Nguyen.Le.Duy.Thinh",
+          status: ["-1", "1.00", "2.00", "0.00", "1.00", "-1"],
+          totalScore: 0,
+          grade: 12,
+          score: [[-1, -1], [1], [1, 1], [0], [1, 0], [-1, -1]],
+        },
+        {
+          name: "Nguyen.Minh.Hieu",
+          status: ["-1", "1.00", "1.00", "1.00", "-1", "-1"],
+          totalScore: 0,
+          grade: 12,
+          score: [[-1, -1], [1], [1, 0], [1], [-1, -1], [-1, -1]],
+        },
+        {
+          name: "Nguyen.Ngoc.Tu",
+          status: ["0.00", "1.00", "-1", "1.00", "1.00", "-1"],
+          totalScore: 0,
+          grade: 11,
+          score: [[0, 0], [1], [-1, -1], [1], [1, 0], [-1, -1]],
+        },
+        {
+          name: "Nguyen.Quoc.An",
+          status: ["0.00", "1.00", "-1", "0.00", "1.00", "-1"],
+          totalScore: 0,
+          grade: 11,
+          score: [[0, 0], [1], [-1, -1], [0], [1, 0], [-1, -1]],
+        },
+        {
+          name: "Nguyen.Tai.Phu",
+          status: ["-1", "1.00", "-1", "0.00", "-1", "-1"],
+          totalScore: 0,
+          grade: 11,
+          score: [[-1, -1], [1], [-1, -1], [0], [-1, -1], [-1, -1]],
+        },
+        {
+          name: "Nguyen.Thanh.Phat",
+          status: ["-1", "1.00", "1.00", "1.00", "1.00", "-1"],
+          totalScore: 0,
+          grade: 12,
+          score: [[-1, -1], [1], [1, 0], [1], [1, 0], [-1, -1]],
+        },
+        {
+          name: "Phan.Ba.Duc",
+          status: ["0.00", "1.00", "-1", "0.00", "1.00", "-1"],
+          totalScore: 0,
+          grade: 12,
+          score: [[0, 0], [1], [-1, -1], [0], [1, 0], [-1, -1]],
+        },
+        {
+          name: "Phan.Minh.Quang",
+          status: ["1.00", "1.00", "2.00", "1.00", "2.00", "-1"],
+          totalScore: 0,
+          grade: 12,
+          score: [[1, 0], [1], [1, 1], [1], [1, 1], [-1, -1]],
+        },
+        {
+          name: "Phan.Nam.Thanh",
+          status: ["0.00", "1.00", "-1", "1.00", "-1", "-1"],
+          totalScore: 0,
+          grade: 11,
+          score: [[0, 0], [1], [-1, -1], [1], [-1, -1], [-1, -1]],
+        },
+        {
+          name: "Tran.Dang.Minh.Quan",
+          status: ["-1", "0.00", "-1", "-1", "1.00", "-1"],
+          totalScore: 0,
+          grade: 11,
+          score: [[-1, -1], [0], [-1, -1], [-1], [1, 0], [-1, -1]],
+        },
+      ],
       mark: [
         0,
         0,
@@ -84,42 +230,17 @@ class App extends Component {
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
       ],
       contest: {
         contestName: "Summer Contest 2021",
         name: ["SC1", "SC2", "SC3", "SC4", "SC5", "SC6"],
-        points: [[17, 18], [27], [14, 24], [25], [13, 17], [13, 32]]
+        points: [[17, 18], [27], [14, 24], [25], [13, 17], [13, 32]],
       },
       light: true,
-      enterLeaveAnimation: "elevator"
+      enterLeaveAnimation: "elevator",
     };
   }
-  findPoint = data => {
+  findPoint = (data) => {
     let newmark = this.state.mark;
     let flag = true;
     for (let i = data.length - 1; i >= 0; i--) {
@@ -142,15 +263,15 @@ class App extends Component {
     }
     status = false;
     this.setState({
-      mark: newmark
+      mark: newmark,
     });
   };
-  judge = data => {
+  judge = (data) => {
     let newmark = this.state.mark;
     let newdata = data;
     let points = [];
-    this.state.contest.points.forEach(element => {
-      element.forEach(sc => {
+    this.state.contest.points.forEach((element) => {
+      element.forEach((sc) => {
         points = [...points, sc];
       });
     });
@@ -188,67 +309,184 @@ class App extends Component {
     }
     newdata[poss] = temp;
     newmark[pos] = 0;
-    for (let i = 0; i < newdata.length; i++) {
-      var e = document.getElementById(newdata[i].name);
-      if (e) {
-        e.style.zIndex = 1000 - i;
-      }
-    }
+    // @hungphongbk wtf are u doing, why interact with pure DOM like this in ReactJS?
+    // for (let i = 0; i < newdata.length; i++) {
+    //   var e = document.getElementById(newdata[i].name);
+    //   if (e) {
+    //     e.style.zIndex = 1000 - i;
+    //   }
+    // }
     status = true;
     this.setState({
       result: newdata,
-      mark: newmark
+      mark: newmark,
     });
   };
-  renderResult = data => {
-    const { styleName, styleNamePending, styleCorrect, styleQuestion, styleQuestionPending,
-      styleRank, styleScore, styleTrophy, styleUnScore,
-      styleWrongAnswer } = Dark;
+  renderResult = (data) => {
+    const {
+      styleName,
+      styleNamePending,
+      styleCorrect,
+      styleQuestion,
+      styleQuestionPending,
+      styleRank,
+      styleScore,
+      styleTrophy,
+      styleUnScore,
+      styleWrongAnswer,
+    } = Dark;
     let colorRow = true;
     const trophy = <img src={Trophy} alt="trophy" height={20} width={23}></img>;
     return data.map((element, id) => {
       let flag = this.state.mark[id];
+      let isPending = flag;
       colorRow = !colorRow;
       let name, rank, score, ans, trophyy;
-      if (flag === 1) {
-        name = <td id = {element.name} style={{...styleNamePending}}>{element.name}</td>;
-      } else {
-        name = <td id = {element.name} style={{...styleName}}>{element.name}</td>;
-      }
-      rank = <td style={{...styleRank}}>{element.rank}</td>;
-      score = <td style={{...styleScore}}>{element.totalScore}</td>;
-      trophyy =
-        element.totalScore > 0 ? (
-          <td
-            style={{...styleTrophy}}
-          >
-            {element.rank === 1 ? trophy : ""}
+      if (isPending === 1) {
+        name = (
+          <td id={element.name} style={{ ...styleNamePending }}>
+            {element.name}
           </td>
-        ) : (
+        );
+        rank = (
+          <td
+            style={{
+              ...styleRank,
+              borderTop: "1px solid #537acd",
+              borderBottom: "1px solid #537acd",
+            }}
+          >
+            {element.rank}
+          </td>
+        );
+        score = (
+          <td
+            style={{
+              ...styleScore,
+              borderTop: "1px solid #537acd",
+              borderBottom: "1px solid #537acd",
+            }}
+          >
+            {element.totalScore}
+          </td>
+        );
+        trophyy =
+          element.totalScore > 0 ? (
             <td
-              style={{...styleTrophy}}
+              style={{
+                ...styleTrophy,
+                borderTop: "1px solid #537acd",
+                borderBottom: "1px solid #537acd",
+              }}
+            >
+              {element.rank === 1 ? trophy : ""}
+            </td>
+          ) : (
+            <td
+              style={{
+                ...styleTrophy,
+                borderTop: "1px solid #537acd",
+                borderBottom: "1px solid #537acd",
+              }}
             ></td>
           );
-      ans = element.score.map(SS => {
-        return SS.map(sc => {
+      } else {
+        name = (
+          <td id={element.name} style={{ ...styleName }}>
+            {" "}
+            {element.name}
+          </td>
+        );
+        rank = <td style={{ ...styleRank }}>{element.rank}</td>;
+        score = <td style={{ ...styleScore }}>{element.totalScore}</td>;
+        trophyy =
+          element.totalScore > 0 ? (
+            <td style={{ ...styleTrophy }}>
+              {element.rank === 1 ? trophy : ""}
+            </td>
+          ) : (
+            <td style={{ ...styleTrophy }}></td>
+          );
+      }
+      ans = element.score.map((SS) => {
+        return SS.map((sc) => {
           if (sc === -1) {
-            return <td style={{...styleUnScore}}>.</td>;
+            if (isPending === 1) {
+              return (
+                <td
+                  style={{
+                    ...styleUnScore,
+                    borderTop: "1px solid #537acd",
+                    borderBottom: "1px solid #537acd",
+                  }}
+                >
+                  .
+                </td>
+              );
+            } else {
+              return <td style={{ ...styleUnScore }}>.</td>;
+            }
           } else if (sc === 2) {
-            return <td style={{...styleWrongAnswer}}>&#x2718;</td>;
+            if (isPending === 1) {
+              return (
+                <td
+                  style={{
+                    ...styleWrongAnswer,
+                    borderTop: "1px solid #537acd",
+                    borderBottom: "1px solid #537acd",
+                  }}
+                >
+                  &#x2718;
+                </td>
+              );
+            } else {
+              return <td style={{ ...styleWrongAnswer }}>&#x2718;</td>;
+            }
           } else if (sc === 3) {
-            return <td style={{...styleCorrect}}>&#x2714;</td>;
+            if (isPending === 1) {
+              return (
+                <td
+                  style={{
+                    ...styleCorrect,
+                    borderTop: "1px solid #537acd",
+                    borderBottom: "1px solid #537acd",
+                  }}
+                >
+                  &#x2714;
+                </td>
+              );
+            } else {
+              return <td style={{ ...styleCorrect }}>&#x2714;</td>;
+            }
           } else {
             if (flag === 1) {
               flag = 0;
-              return <td style={{...styleQuestionPending}}>&#x3f;</td>;
+              return <td style={{ ...styleQuestionPending }}>&#x3f;</td>;
             } else {
-              return <td style={{...styleQuestion}}>&#x3f;</td>;
+              if (isPending === 1) {
+                return (
+                  <td
+                    style={{
+                      ...styleQuestion,
+                      borderTop: "1px solid #537acd",
+                      borderBottom: "1px solid #537acd",
+                    }}
+                  >
+                    &#x3f;
+                  </td>
+                );
+              } else {
+                return <td style={{ ...styleQuestion }}>&#x3f;</td>;
+              }
             }
           }
         });
       });
       return (
-        <tr style={{position: 'relative', height: "12px"}} key={element.name}>
+        <tr
+          style={{ height: "12px", position: "relative", zIndex: 1000 - id }}
+          key={element.name}
+        >
           {name}
           {trophyy}
           {rank}
@@ -264,7 +502,7 @@ class App extends Component {
     const contest = this.state.contest;
     let data = this.state.result;
     const styleTable = {
-      cursor: "pointer"
+      cursor: "pointer",
     };
     data[0].rank = 1;
     for (let i = 1; i < data.length; i++) {
@@ -278,14 +516,14 @@ class App extends Component {
       width: "77%",
       float: "left",
       height: "100%",
-      display: "inline-block"
+      display: "inline-block",
     };
     const secondPart = {
       width: "20%",
       float: "right",
       height: "100%",
       display: "inline-block",
-      align: "center"
+      align: "center",
     };
     return (
       <div>
@@ -303,7 +541,7 @@ class App extends Component {
                 duration={3500}
                 delay={30}
                 style={{
-                  position: "absolute"
+                  position: "absolute",
                 }}
               >
                 <tr key="z">
@@ -326,7 +564,7 @@ class App extends Component {
                   ))}
                 </tr>
                 <tr key="x">
-                  {contest.points.map(element => {
+                  {contest.points.map((element) => {
                     return element.map((value, index) => (
                       <td key={index} style={styleSubProblem}>
                         {value}

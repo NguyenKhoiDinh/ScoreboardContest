@@ -10,7 +10,7 @@ class ListContestant extends Component {
     super();
     this.state = {
       young: [],
-      old: []
+      old: [],
     };
   }
   createTop = () => {
@@ -26,7 +26,7 @@ class ListContestant extends Component {
     let newDataOld = [];
     let tmpOld = [];
     let tmpYoung = [];
-    data.forEach(element => {
+    data.forEach((element) => {
       if (element.grade === 11) {
         newDataYoung = [...newDataYoung, element];
       } else {
@@ -83,7 +83,7 @@ class ListContestant extends Component {
     }
     this.setState({
       young: tmpYoung,
-      old: tmpOld
+      old: tmpOld,
     });
   };
   componentWillReceiveProps = () => {
@@ -91,7 +91,7 @@ class ListContestant extends Component {
   };
   render() {
     const space = {
-      height: "35px"
+      height: "35px",
     };
     return (
       <div>

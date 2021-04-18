@@ -1,8 +1,59 @@
 const paddingVal = 3;
-let leng = 61 / 10;
+let leng = 59.7 / 10;
 leng *= 1.202;
 let s = leng.toString();
 
+export const emptyArray = [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+];
 export const Dark = {
   styleContestName: {
     fontWeight: "bold",
@@ -119,5 +170,24 @@ export const Dark = {
     width: s + "%",
     border: "1px",
     color: "white",
+  },
+  styleShowing: {
+    textAlign: "left",
+    fontSize: "14px",
+    fontWeight: "bold",
+    backgroundColor: "rgb(55, 146, 62)",
+    paddingTop: paddingVal + "px",
+    paddingBottom: paddingVal + "px",
+    paddingRight: "20px",
+    paddingLeft: "10px",
+    color: "white",
+  },
+};
+
+export const Card = {
+  styleCard: {
+    backgroundColor: "#0c0b0b",
+    maxWidth: "300px",
+    maxHeight: "1000px",
   },
 };

@@ -20,6 +20,12 @@ contestantDay1 = []
 contestantDay2 = []
 mark = []
 contestant = []
+f = open("linkUrl.txt", "r")
+lines = f.readlines()
+dict = {}
+for line in lines:
+    name, link = map(str, line.strip().split())
+    dict[name] = link
 with open('Result1.csv', mode='r')as file:
     # reading the CSV file
     csvFile = csv.reader(file)
@@ -64,8 +70,13 @@ for i in range(len(contestantDay2)):
     contestant.append(contestantDay2[i])
 for con in contestant:
     con.totalScore = 0
-    con.grade = 12
+    con.grade = 11
     con.score = []
+    con.award = "none"
+    if not con.name in dict:
+        con.linkUrl = "https://i.imgur.com/9cATnWK.png"
+    else:
+        con.linkUrl = dict[con.name]
     for i in range(len(exerciseScore)):
         partScore = []
         if con.status[i] == '-1':

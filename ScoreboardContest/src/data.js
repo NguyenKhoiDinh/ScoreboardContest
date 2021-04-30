@@ -177,7 +177,7 @@ export const data = [
     grade: 12,
     score: [[-1, -1], [1], [1, 0], [1], [1, 0], [-1, -1]],
     award: "none",
-    linkUrl: "https://i.imgur.com/Ei3YAZX.jpg",
+    linkUrl: "https://i.imgur.com/MLikQwe.jpg[/img]",
   },
   {
     name: "Phan.Ba.Duc",

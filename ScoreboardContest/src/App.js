@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import FlipMove from "react-flip-move";
-import Trophy from "./img/award.png";
+import Trophy from "./img/champion.png";
 import GoldMedal from "./img/gold-medal.png";
 import SilverMedal from "./img/silver-medal.png";
 import BronzeMedal from "./img/bronze-medal.png";
@@ -268,7 +268,7 @@ class App extends Component {
     let colorRow = true;
     let data = processData;
     data = this.rearrangeData(data);
-    const trophy = <img src={Trophy} alt="trophy" height={20} width={23}></img>;
+    const trophy = <img src={Trophy} alt="trophy" height={20} width={20}></img>;
     const goldMedal = (
       <img src={GoldMedal} alt="goldMedal" height={20} width={23}></img>
     );

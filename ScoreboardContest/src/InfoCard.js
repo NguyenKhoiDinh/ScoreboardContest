@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Card } from "./style";
-import Trophy from "./img/award.png";
+import Trophy from "./img/champion.png";
 import GoldMedal from "./img/gold-medal.png";
 import SilverMedal from "./img/silver-medal.png";
 import BronzeMedal from "./img/bronze-medal.png";
